@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Завдання 3 -->
+
+       <div class="container">
+        <h1>Закладки</h1>
+        <form id="bookmarkForm">
+            <label for="url">Посилання:</label>
+            <input type="url" id="url" name="url" placeholder="http://example.com" required>
+
+            <label for="name">Назва:</label>
+            <input type="text" id="name" name="name" required>
+
+            <button type="button" onclick="addNewBookmark()">Додати</button>
+        </form>
+
+        <ul id="bookmarkList"></ul>
+    </div>
+
+    <script src="js/main3.js"></script>
+</body>
+</html>
