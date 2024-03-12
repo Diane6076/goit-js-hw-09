@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- Завдання 2 -->
+
+    <div class="container">
+        <h1>Збереження даних в localStorage</h1>
+        <form id="dataForm">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="button" onclick="saveData()">Зберегти</button>
+        </form>
+
+        <div id="saveData"></div>
+    </div>
+
+
+    <div class="container">
+        <h1>Форма логіна та пароля</h1>
+        <form id="loginForm">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="checkCredentials()">Увійти</button>
+        </form>
+
+        <div id="loginResult"></div>
+    </div>
+
+    <script src="js/main2.js"></script>
+</body>
+</html>
